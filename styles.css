@@ -7,14 +7,14 @@ body {
     max-width: 600px; /*Define a largura máxima do container*/
     margin: 50px auto; /*Centraliza o container na página*/
     padding: 20px; /*Adiciona espaço interno ao container*/
-    background-color: #fff; 
+    background-color: #ff0000; 
     border-radius: 8px; /*Adiciona bordas arredondadas ao container*/
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /*Adiciona uma sombra ao container*/
   }
   
   h1, h2 {
     text-align: center; /*Centraliza o texto*/
-    color: #333; 
+    color: #ffffff; 
   }
   
   .editor {
@@ -31,6 +31,8 @@ body {
     margin-bottom: 20px; /*Adiciona espaço abaixo do cartão*/
     border-radius: 8px; /*Adiciona bordas arredondadas ao cartão*/
     overflow: hidden; /* Garante que a imagem não ultrapasse os limites do cartão */
+    background-color: #ffffff; 
+    box-shadow: 0 0 10px rgba(1, 0, 0, 3); /*Adiciona uma sombra ao container*/
   }
   #cardImage {
     max-width: 100%; /* Garante que a imagem não ultrapasse a largura do cartão */
