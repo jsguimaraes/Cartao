@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8"> <!-- Define a codificação do documento -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define a viewport para dispositivos móveis -->
+  <title>Editor de Cartões de Aniversário</title> <!-- Título da página -->
+  <link rel="stylesheet" href="styles.css"> <!-- Importa o arquivo CSS -->
+</head>
+<body>
+  <div class="container"> <!-- Container principal -->
+    <h1>Editor de Cartões de Aniversário</h1> <!-- Título da página -->
+    <div class="editor"> <!-- Div para o formulário de edição -->
+      <h2>Personalize seu Cartão</h2> <!-- Título do formulário -->
+      <form id="cardForm"> <!-- Formulário -->
+        <div class="form-group"> <!-- Grupo de formulário -->
+          <label for="backgroundColor">Cor de Fundo:</label> <!-- Rótulo do campo -->
+          <input type="color" id="backgroundColor" name="backgroundColor"> <!-- Campo para selecionar cor -->
+        </div>
+        <div class="form-group"> <!-- Grupo de formulário -->
+          <label for="borderColor">Cor da Borda:</label> <!-- Rótulo do campo -->
+          <input type="color" id="borderColor" name="borderColor"> <!-- Campo para selecionar cor -->
+        </div>
+        <div class="form-group"> <!-- Grupo de formulário -->
+          <label for="textColor">Cor do Texto:</label> <!-- Rótulo do campo -->
+          <input type="color" id="textColor" name="textColor"> <!-- Campo para selecionar cor -->
+        </div>
+        <div class="form-group"> <!-- Grupo de formulário -->
+          <label for="message">Mensagem:</label> <!-- Rótulo do campo -->
+          <textarea id="message" name="message" rows="4"></textarea> <!-- Campo de texto para a mensagem -->
+        </div>
+        <div class="form-group">
+            <label for="imageUpload">Carregar Imagem:</label>
+            <input type="file" id="imageUpload" name="imageUpload" accept="image/*" class="form-control-file">
+        </div>
+        <div class="form-group">
+            <label for="imageUrl">URL da Imagem:</label>
+            <input type="text" id="imageUrl" name="imageUrl" class="form-control">
+        </div>        
+      </form>
+    </div>
+    <div class="card" id="card"> <!-- Div do cartão -->
+      <p id="messageText">Feliz Aniversário!</p> <!-- Texto padrão do cartão -->
+      <img id="cardImage" src="" alt="Imagem do Convite">
+    </div>
+  </div>
+  <script src="script.js"></script> <!-- Importa o arquivo JavaScript -->
+</body>
+</html>
